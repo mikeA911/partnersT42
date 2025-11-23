@@ -49,17 +49,27 @@ export default function Trip42PartnerLanding() {
           <Sparkles size={16} />
           <span>Rolling Applications Open</span>
         </div>
-        
-        <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
-          Own Your Own<br />
+
+        <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-4 leading-tight">
+          Own Your Own App.<br />
           <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Travel Journal App
+            Zero Upfront Cost.
           </span>
         </h1>
-        
+
+        <p className="text-2xl text-gray-700 mb-4 max-w-4xl mx-auto leading-relaxed font-semibold">
+          Launch a Travel Journal App Under Your Brand - No Coding Required
+        </p>
+
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 max-w-4xl mx-auto text-left">
+          <h2 className="text-xl font-bold text-blue-900 mb-2">The Opportunity in One Sentence</h2>
+          <p className="text-lg text-blue-800">
+            I give you a fully-built travel journal app, you customize it with your branding and theme, launch it in app stores, and we split the revenue 50/50.
+          </p>
+        </div>
+
         <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Launch a fully-functional travel journaling app under your brand. 
-          Zero upfront cost, zero coding required. Just customize, deploy, and earn 50% of all revenue.
+          Trip42 is a voice-first travel journaling app that turns spoken memories into beautiful, shareable digital journals. But here's the twist: I'm not asking you to use it or sell it for me. I'm offering you the chance to own and operate your own version of it. Your app. Your brand. Your theme. Your revenue.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -70,8 +80,8 @@ export default function Trip42PartnerLanding() {
             Become a Partner
             <ArrowRight size={20} />
           </a>
-          <a 
-            href="#demo" 
+          <a
+            href="demo.html"
             className="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-lg font-bold text-lg hover:border-gray-400 transition-colors flex items-center justify-center gap-2"
           >
             See Demo App
@@ -136,6 +146,89 @@ export default function Trip42PartnerLanding() {
                 <ul className="space-y-2">
                   {item.features.map((feature, i) => (
                     <li key={i} className="flex items-center gap-2 text-sm text-gray-700">
+      {/* What You Bring to the Table */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              What You Bring to the Table
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Your unique value that makes this partnership work. No coding or technical skills required.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-xl p-8 shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">During Beta Testing (Free)</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <Check className="text-green-600 mt-1 flex-shrink-0" size={20} />
+                  <span>Use the app regularly for 4-8 weeks</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="text-green-600 mt-1 flex-shrink-0" size={20} />
+                  <span>Record at least 10-20 voice notes</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="text-green-600 mt-1 flex-shrink-0" size={20} />
+                  <span>Create 2-3 test journals</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="text-green-600 mt-1 flex-shrink-0" size={20} />
+                  <span>Provide feedback via surveys and calls</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="text-green-600 mt-1 flex-shrink-0" size={20} />
+                  <span>Report bugs and suggest improvements</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-xl p-8 shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">As a Partner</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <Users className="text-blue-600 mt-1 flex-shrink-0" size={20} />
+                  <span>Your time (5-10 hours/week marketing)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <TrendingUp className="text-blue-600 mt-1 flex-shrink-0" size={20} />
+                  <span>Your network (social media, community, friends)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Palette className="text-blue-600 mt-1 flex-shrink-0" size={20} />
+                  <span>Your creativity (design your unique theme)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <MessageCircle className="text-blue-600 mt-1 flex-shrink-0" size={20} />
+                  <span>Your marketing skills (promote your app)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <DollarSign className="text-blue-600 mt-1 flex-shrink-0" size={20} />
+                  <span>App Store fees ($99/year Apple + $25 one-time Google = ~$124/year)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-12 bg-yellow-50 border-l-4 border-yellow-400 p-6">
+            <h4 className="text-lg font-bold text-yellow-800 mb-2">What You DON'T Need</h4>
+            <div className="grid md:grid-cols-2 gap-4 text-yellow-700">
+              <ul className="space-y-1">
+                <li>❌ Coding skills</li>
+                <li>❌ Technical knowledge</li>
+                <li>❌ Design experience</li>
+              </ul>
+              <ul className="space-y-1">
+                <li>❌ Upfront investment</li>
+                <li>❌ Marketing budget</li>
+                <li>❌ Previous app experience</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
                       <Check size={16} className="text-green-600 flex-shrink-0" />
                       <span>{feature}</span>
                     </li>
@@ -147,6 +240,58 @@ export default function Trip42PartnerLanding() {
         </div>
       </section>
 
+      {/* Zero Upfront Cost Model */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Zero Upfront Cost Model
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Here's how this works: By the time you invest $124, you've already tested the product for 2 months. You KNOW it works.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-blue-600">1</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Phase 1: Beta Testing</h3>
+              <div className="text-green-600 font-semibold mb-2">$0 investment</div>
+              <p className="text-gray-600">Just download and use. No commitment required. Keep using the app even if you don't partner.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-purple-600">2</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Phase 2: Partnership Decision</h3>
+              <div className="text-green-600 font-semibold mb-2">Still $0</div>
+              <p className="text-gray-600">After testing, decide if you want to partner. No pressure, no obligation.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-pink-600">3</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Phase 3: Customization</h3>
+              <div className="text-green-600 font-semibold mb-2">Still $0 from you</div>
+              <p className="text-gray-600">I build your custom version. You design your theme. Everything ready to submit to App Stores.</p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-8 text-center">
+            <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span className="text-3xl font-bold text-green-600">4</span>
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">Phase 4: Launch</h3>
+            <div className="text-orange-600 font-semibold text-lg mb-2">First Real Cost: ~$124</div>
+            <p className="text-gray-700 mb-4">Now you pay App Store fees. Submit your apps. Start marketing. Begin earning immediately.</p>
+            <p className="text-sm text-gray-600">Why This Works: By the time you invest $124, you've already tested the product for 2 months. You KNOW it works. You KNOW there's demand. You're making an informed investment, not a blind gamble.</p>
+          </div>
+        </div>
+      </section>
       {/* How It Works */}
       <section id="how-it-works" className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-4">
@@ -225,6 +370,46 @@ export default function Trip42PartnerLanding() {
               Real numbers based on realistic scenarios. Your results depend on your marketing effort.
             </p>
           </div>
+          <div className="bg-blue-50 rounded-xl p-8 mb-12">
+            <h3 className="text-2xl font-bold text-blue-900 mb-4">Revenue Model: 50/50 Split</h3>
+            <p className="text-blue-800 mb-6">It's up to you - Happy with just friends and family? No problem. Wanna keep it private within your fan club? Be my guest. Be the #1 App in your region. I love that!</p>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-white rounded-lg p-6">
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Option 1: One-Time Purchase</h4>
+                <p className="text-gray-600 mb-3">Price your app at $0.99, $1.99, $2.99, or $4.99</p>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>• User pays once, owns it forever</li>
+                  <li>• Gets Welcome credits (up to app price)</li>
+                  <li>• Tops up when credits run out</li>
+                  <li>• Simple, clean, instant revenue</li>
+                </ul>
+                <div className="mt-3 text-xs text-gray-500">Note: 1 voice recording/day/year = $36USD</div>
+              </div>
+
+              <div className="bg-white rounded-lg p-6">
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Option 2: Freemium</h4>
+                <p className="text-gray-600 mb-3">Free download with Welcome credits = 100</p>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>• Tops up when credits run out</li>
+                  <li>• Builds user base quickly</li>
+                  <li>• Converts free users to paying</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-lg p-6">
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Option 3: Subscription</h4>
+                <p className="text-gray-600 mb-3">Free or low-cost download</p>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>• Monthly: $2.99/month</li>
+                  <li>• Annual: $19.99/year (save 40%)</li>
+                  <li>• Recurring revenue every month</li>
+                </ul>
+              </div>
+            </div>
+
+            <p className="text-sm text-blue-700 mt-4">You choose your pricing model. I get 50% of whatever you earn.</p>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -301,6 +486,265 @@ export default function Trip42PartnerLanding() {
       <section id="benefits" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
+      {/* Theme Builder Pack */}
+      <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              The Theme Builder Pack
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              A comprehensive customization system that lets you design your app's ONE unique theme without touching code.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 mb-12">
+            <div className="flex items-center gap-3 mb-6">
+              <Palette className="text-purple-600" size={32} />
+              <h3 className="text-2xl font-bold text-gray-900">What Is It?</h3>
+            </div>
+            <p className="text-gray-700 mb-4">
+              A comprehensive customization system that lets you design your app's ONE unique theme without touching code. Your users will experience this single theme throughout their entire app journey.
+            </p>
+            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+              <p className="text-yellow-800 font-semibold">
+                Important: Unlike the main Trip42 app which offers multiple theme packs for purchase, your app will feature ONE cohesive theme that defines your brand identity. This creates a consistent, focused experience for your users.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white rounded-xl p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-6">What You Can Customize</h3>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Visual Design</h4>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>• Primary brand color</li>
+                    <li>• Secondary accent color</li>
+                    <li>• Background colors and patterns</li>
+                    <li>• Text colors and contrast</li>
+                    <li>• Button styles and colors</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Typography</h4>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>• Header fonts (20+ options)</li>
+                    <li>• Body text fonts (20+ options)</li>
+                    <li>• Font sizes and weights</li>
+                    <li>• Letter spacing</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Layout & Components</h4>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>• Entry card design</li>
+                    <li>• Button styles</li>
+                    <li>• Spacing and padding</li>
+                    <li>• Photo gallery layouts</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-6">Character Avatars & AI Personalities</h3>
+              <p className="text-gray-700 mb-4">
+                This is where your theme really comes to life! Design custom AI assistants that interact with users.
+              </p>
+              <div className="space-y-4">
+                <div className="border-l-4 border-blue-500 pl-4">
+                  <h4 className="font-semibold text-blue-900">Travel Guide Character</h4>
+                  <p className="text-sm text-blue-700">Provides local recommendations, tips, hidden gems</p>
+                </div>
+                <div className="border-l-4 border-green-500 pl-4">
+                  <h4 className="font-semibold text-green-900">Journal Assistant Character</h4>
+                  <p className="text-sm text-green-700">Helps organize memories, suggests journal entries</p>
+                </div>
+                <div className="border-l-4 border-orange-500 pl-4">
+                  <h4 className="font-semibold text-orange-900">Practical Helper Character</h4>
+                  <p className="text-sm text-orange-700">Medicine finder, practical travel needs</p>
+                </div>
+              </div>
+              <p className="text-sm text-gray-600 mt-4">You design the avatars and write the AI personality prompts that define how each character interacts with your users.</p>
+            </div>
+          </div>
+
+          <div className="bg-gray-50 rounded-xl p-8">
+            <h3 className="text-xl font-bold text-gray-900 mb-6">Pre-Made Theme Templates</h3>
+            <p className="text-gray-700 mb-6">Start from scratch OR customize one of these base templates:</p>
+            <div className="grid md:grid-cols-3 gap-4">
+              <div className="bg-white rounded-lg p-4">
+                <h4 className="font-semibold text-gray-900">Minimalist Modern</h4>
+                <p className="text-sm text-gray-600">Clean whites, simple icons, sans-serif fonts</p>
+              </div>
+              <div className="bg-white rounded-lg p-4">
+                <h4 className="font-semibold text-gray-900">Dark Mode Traveler</h4>
+                <p className="text-sm text-gray-600">Sleek blacks, deep blues, high contrast</p>
+              </div>
+              <div className="bg-white rounded-lg p-4">
+                <h4 className="font-semibold text-gray-900">Vintage Explorer</h4>
+                <p className="text-sm text-gray-600">Warm browns, sepia tones, classic serif fonts</p>
+              </div>
+            </div>
+            <p className="text-sm text-gray-600 mt-4">Each template includes complete color palette, typography system, pre-designed AI character avatars, and suggested personality prompts.</p>
+          </div>
+        </div>
+      </section>
+      {/* Target Markets */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Your Target Market
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              The beauty of this model is you can target ANY niche you're connected to. You know your community better than I do. That's your competitive advantage.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6">
+              <h3 className="text-lg font-bold text-blue-900 mb-3">Geographic Niches</h3>
+              <ul className="text-sm text-blue-800 space-y-1">
+                <li>• "Seoul Stories" - Korean expats</li>
+                <li>• "Dubai Diaries" - Middle East travelers</li>
+                <li>• "Bali Journals" - Indonesia digital nomads</li>
+                <li>• "Patagonia Tales" - South America adventurers</li>
+              </ul>
+            </div>
+
+            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6">
+              <h3 className="text-lg font-bold text-green-900 mb-3">Activity Niches</h3>
+              <ul className="text-sm text-green-800 space-y-1">
+                <li>• "Backpacker's Log" - Budget travelers</li>
+                <li>• "Luxury Wanderer" - High-end tourism</li>
+                <li>• "Foodie's Journey" - Culinary travel</li>
+                <li>• "Solo Female Traveler" - Safety-focused</li>
+                <li>• "Van Life Chronicles" - Road trip journaling</li>
+              </ul>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6">
+              <h3 className="text-lg font-bold text-purple-900 mb-3">Professional Niches</h3>
+              <ul className="text-sm text-purple-800 space-y-1">
+                <li>• "Flight Attendant Diaries" - Airline crew</li>
+                <li>• "Digital Nomad Notes" - Remote workers</li>
+                <li>• "Teacher Abroad" - International educators</li>
+                <li>• "Medical Missions" - Healthcare volunteers</li>
+              </ul>
+            </div>
+
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6">
+              <h3 className="text-lg font-bold text-orange-900 mb-3">Cultural/Community</h3>
+              <ul className="text-sm text-orange-800 space-y-1">
+                <li>• "Expat Experiences" - Your nationality abroad</li>
+                <li>• "Study Abroad Stories" - International students</li>
+                <li>• "Retirement Adventures" - Senior travelers</li>
+                <li>• "Family Vacation Keeper" - Parents documenting trips</li>
+              </ul>
+            </div>
+
+            <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 md:col-span-2 lg:col-span-1">
+              <h3 className="text-lg font-bold text-red-900 mb-3">Your Unique Angle</h3>
+              <p className="text-sm text-red-800">
+                You know your community better than I do. That's your competitive advantage. Whether it's travel bloggers, adventure seekers, or niche communities - you bring the audience, I provide the technology.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-gray-50 rounded-xl p-8 text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Why This Works</h3>
+            <p className="text-gray-700 mb-4">
+              NOT Like: Dropshipping, MLM, Affiliate marketing, Franchises, Freelancing
+            </p>
+            <p className="text-gray-700">
+              It's Actually Like: White-label SaaS, Publishing, App Store entrepreneurship, Partnership - We succeed together or fail together.
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* Why This Is Passive Income */}
+      <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Why This Is Passive Income
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Once your app is launched, it keeps earning while you focus on other things.
+            </p>
+          </div>
+
+          <div class="space-y-8 max-w-4xl mx-auto">
+            <div class="bg-white rounded-xl p-6 shadow-sm">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-xl font-bold text-gray-900">Month 1-2: Testing & Learning</h3>
+                <span class="text-sm text-gray-500">Active Phase</span>
+              </div>
+              <p class="text-gray-600 mb-4">Beta test thoroughly, understand every feature, document your experience, join partner calls, decide on partnership.</p>
+              <div class="text-sm text-gray-700">
+                <strong>Time investment:</strong> 20-30 hours beta testing
+              </div>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-sm">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-xl font-bold text-gray-900">Month 3: Design & Launch</h3>
+                <span class="text-sm text-gray-500">Active Phase</span>
+              </div>
+              <p class="text-gray-600 mb-4">Customize your theme, choose your branding, set your pricing, submit to App Stores, prepare marketing materials.</p>
+              <div class="text-sm text-gray-700">
+                <strong>Time investment:</strong> 10-20 hours setup and launch
+              </div>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-sm">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-xl font-bold text-gray-900">Month 4-6: Launch & Initial Growth</h3>
+                <span class="text-sm text-gray-500">Semi-Active</span>
+              </div>
+              <p class="text-gray-600 mb-4">Official launch, hit your network hard, gather reviews, join communities, create demo videos.</p>
+              <div class="text-sm text-gray-700">
+                <strong>Time investment:</strong> 10-15 hours/week
+              </div>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-sm">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-xl font-bold text-gray-900">Month 7-12: Scaling Up</h3>
+                <span class="text-sm text-gray-500">Semi-Passive</span>
+              </div>
+              <p class="text-gray-600 mb-4">Expand beyond network, partner with influencers, run ads, build email list, focus on retention.</p>
+              <div class="text-sm text-gray-700">
+                <strong>Time investment:</strong> 5-10 hours/week
+              </div>
+            </div>
+
+            <div class="bg-green-100 border-l-4 border-green-500 rounded-xl p-6">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-xl font-bold text-green-900">Year 2+: Passive Mode</h3>
+                <span class="text-sm text-green-700">Passive</span>
+              </div>
+              <p class="text-green-800 mb-4">Established user base, organic downloads from search, focus on retention, minimal active marketing.</p>
+              <div class="text-sm text-green-700">
+                <strong>Time investment:</strong> 1-2 hours/week
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12 bg-white rounded-xl p-8 text-center shadow-sm">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">The Key Insight</h3>
+            <p class="text-gray-600 mb-4">
+              Apps don't stop working when you stop promoting them. That's the beauty of digital products.
+            </p>
+            <p class="text-sm text-gray-500">
+              Your app keeps getting downloaded from App Store search, reviews bring organic traffic, and existing users provide word-of-mouth growth.
+            </p>
+          </div>
+        </div>
+      </section>
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Why Partner With Trip42?
             </h2>
@@ -578,10 +1022,10 @@ export default function Trip42PartnerLanding() {
             <div>
               <h4 className="font-bold mb-4">Resources</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-white">Documentation</a></li>
-                <li><a href="#" className="hover:text-white">Deployment Guide</a></li>
-                <li><a href="#" className="hover:text-white">Marketing Templates</a></li>
-                <li><a href="#" className="hover:text-white">Partner Stories</a></li>
+                <li><a href="resources.html" className="hover:text-white">Documentation</a></li>
+                <li><a href="resources.html" className="hover:text-white">Deployment Guide</a></li>
+                <li><a href="resources.html" className="hover:text-white">Marketing Templates</a></li>
+                <li><a href="resources.html" className="hover:text-white">Partner Stories</a></li>
               </ul>
             </div>
             <div>
