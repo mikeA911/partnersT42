@@ -1,8 +1,8 @@
 {
   "name": "partners-t42",
   "version": "1.0.0",
-  "description": "Trip42 Partners Landing Page",
-  "main": "index.js",
+  "description": "Trip42 Partner Program Landing Page",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,13 +10,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^14.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "lucide-react": "^0.294.0"
+    "lucide-react": "^0.294.0",
+    "next": "14.0.0",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "eslint": "^8.50.0",
-    "eslint-config-next": "^14.0.0"
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1"
   }
 }
