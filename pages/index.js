@@ -447,7 +447,6 @@ export default function Trip42PartnerLanding() {
           </div>
 
           <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-10 text-center shadow-2xl relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/noise.png')] opacity-10"></div>
             <div className="relative z-10">
               <div className="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-green-500/30 animate-pulse">
                 <span className="text-4xl font-bold text-white">4</span>
@@ -1214,7 +1213,6 @@ export default function Trip42PartnerLanding() {
       {/* Application Form */}
       <section id="apply" className="py-24 bg-gradient-to-br from-blue-600 to-indigo-700 relative overflow-hidden">
         {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10 bg-[url('/noise.png')]"></div>
         <div className="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"></div>
 
