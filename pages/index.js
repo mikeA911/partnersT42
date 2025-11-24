@@ -1,22 +1,57 @@
 import React, { useState } from 'react';
 import { Rocket, Code, Palette, DollarSign, Users, Check, ArrowRight, Sparkles, Zap, Shield, TrendingUp, Heart, MessageCircle } from 'lucide-react';
+import { supabase } from '../lib/supabase';
 
 import Head from 'next/head';
 export default function Trip42PartnerLanding() {
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // In production, this would send to your backend
-    console.log('Partner application:', email);
-    
-    // Construct mailto link
-    const subject = encodeURIComponent('New Partner Application');
-    const body = encodeURIComponent(`Name: ${e.target[0].value}\nEmail: ${email}\nLocation: ${e.target[2].value}\nTarget Market: ${e.target[3].value}\nAudience Size: ${e.target[4].value}\nInterest: ${e.target[5].value}`);
-    window.location.href = `mailto:partners@trip42.cafe?subject=${subject}&body=${body}`;
 
-    setSubmitted(true);
+    try {
+      // Check if Supabase is configured
+      if (supabase) {
+        // Submit to Supabase
+        const { data, error } = await supabase
+          .from('partner_applications')
+          .insert([
+            {
+              name: e.target[0].value, // Name
+              email: email, // Email
+              location: e.target[2].value || null, // Location
+              target_market: e.target[3].value, // Target Market/Audience
+              audience_size: e.target[4].value || null, // Audience Size
+              why_interested: e.target[5].value || null, // Why interested
+            }
+          ]);
+
+        if (error) {
+          console.error('Error submitting form:', error);
+          // Fallback to mailto if Supabase fails
+          const subject = encodeURIComponent('New Partner Application');
+          const body = encodeURIComponent(`Name: ${e.target[0].value}\nEmail: ${email}\nLocation: ${e.target[2].value}\nTarget Market: ${e.target[3].value}\nAudience Size: ${e.target[4].value}\nInterest: ${e.target[5].value}`);
+          window.location.href = `mailto:partners@trip42.cafe?subject=${subject}&body=${body}`;
+        } else {
+          console.log('Form submitted successfully:', data);
+        }
+      } else {
+        // Fallback to mailto if Supabase is not configured
+        const subject = encodeURIComponent('New Partner Application');
+        const body = encodeURIComponent(`Name: ${e.target[0].value}\nEmail: ${email}\nLocation: ${e.target[2].value}\nTarget Market: ${e.target[3].value}\nAudience Size: ${e.target[4].value}\nInterest: ${e.target[5].value}`);
+        window.location.href = `mailto:partners@trip42.cafe?subject=${subject}&body=${body}`;
+      }
+
+      setSubmitted(true);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      // Fallback to mailto if anything fails
+      const subject = encodeURIComponent('New Partner Application');
+      const body = encodeURIComponent(`Name: ${e.target[0].value}\nEmail: ${email}\nLocation: ${e.target[2].value}\nTarget Market: ${e.target[3].value}\nAudience Size: ${e.target[4].value}\nInterest: ${e.target[5].value}`);
+      window.location.href = `mailto:partners@trip42.cafe?subject=${subject}&body=${body}`;
+      setSubmitted(true);
+    }
   };
 
   return (
