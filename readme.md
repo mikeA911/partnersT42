@@ -15,4 +15,4 @@ Partner program landing page for Trip42 - Own your own travel journal app.
 npx serve .
 ```
 
-Visit http://localhost:3000
+Visit [https://partners.trip42.cafe/
